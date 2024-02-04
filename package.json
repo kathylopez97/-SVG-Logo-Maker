@@ -1,0 +1,27 @@
+{
+  "name": "svg-logo-maker",
+  "version": "1.0.0",
+  "description": "svg-logo-maker",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kathylopez97/-SVG-Logo-Maker.git"
+  },
+  "author": "Kathy Lopez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kathylopez97/-SVG-Logo-Maker/issues"
+  },
+  "homepage": "https://github.com/kathylopez97/-SVG-Logo-Maker#readme",
+  "dependencies": {
+    "jest": "^29.7.0"
+  },
+  "devDependencies": {}
+}
