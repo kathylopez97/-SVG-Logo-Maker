@@ -17,20 +17,21 @@
 //THEN I am shown a 300x200 pixel image that matches the criteria I entered
 //
 
-
-// This function imports the classes from the ./lib from circle ,triangle and square  directory
+//This function imports the classes from the ./lib from circle ,triangle and square  directory
 //
+const inquirer = require('inquirer');
+const fs = require('fs');
+const { Square } = require('./lib/square.js');
+const { Circle } = require('./lib/circle.js');
+const { Triangle } = require('./lib/triangle.js');
 
-const fs =require('fs');
-const inquirer =require('inquirer');
-const { Square } =require('./lib/square.js');
-const { Circle } =require('./lib/circle.js');
-const { Triangle } =require('./lib/triangle.js');
+
 
 // An array of prompt questions to ask the user input which svg file shape for the logo maker 
+        // The user must type 3 characters to create logo
 inquirer
         .prompt ([
-            // The user must type 3 characters to create logo
+     
             {
                 type: 'input',
                 message: 'Enter three characters.',
@@ -87,7 +88,7 @@ inquirer
                // The user inputs a color keyword of the shape logo
             {
                 type: 'input',
-                message: 'Enter a color keyword (OR a hexadecimal number)',
+                message: 'Enter a shape color keyword (OR a hexadecimal number)',
                 name: 'shapeColor',
                 validate: shape=> {
                     if (shape) {
@@ -99,7 +100,7 @@ inquirer
                      }
                 }
               },
-        ])     
+        ])
 
         // This Function creates the  square circle and triangle elements
         // once user input their logo it redirects to example file
