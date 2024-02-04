@@ -43,8 +43,6 @@ How to create SVG Logo Maker Instructions:
 - License Badge: [Shields.io](https://shields.io/)
 ## Mock-up
 ![Circle SVG File](images/circle.logo.svg)
-![Square SVG File](images/square.logo.svg)
-![Triangle SVG File](images/triangle.logo.svg)
 ## Credits 
 - Youtube: [Youtube](https://youtube.com)
 - Visual Studio Code: [VS Code](https://code.visualstudio.com/)
